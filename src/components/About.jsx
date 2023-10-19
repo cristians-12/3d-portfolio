@@ -43,7 +43,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Me gusta Sheim gallardo
+        Tengo experiencia y conocimiento en lenguajes como JavaScript, PHP, CSS, HTML5, Python, Arduino y experiencia en frameworks como React, Vue, Tailwind, Bootstrap
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
