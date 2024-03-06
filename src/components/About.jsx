@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { styles } from "../style";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import { SectionWrapper } from '../hoc';
+import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ i, title, icon }) => {
   return (
@@ -15,15 +15,19 @@ const ServiceCard = ({ i, title, icon }) => {
           variants={fadeIn("right", "spring", 0.5 * i, 0.75)}
           className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
         >
-          <div options={{
-            max:45,
-            scale:1,
-            speed:450
-          }}
+          <div
+            // eslint-disable-next-line react/no-unknown-property
+            options={{
+              max: 45,
+              scale: 1,
+              speed: 450,
+            }}
             className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
           >
             <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-            <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+            <h3 className="text-white text-[20px] font-bold text-center">
+              {title}
+            </h3>
           </div>
         </motion.div>
       </Tilt>
@@ -43,10 +47,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Tengo experiencia y conocimiento en lenguajes como JavaScript, PHP, CSS, HTML5, Python, Arduino y experiencia en frameworks como React, Vue, Tailwind, Bootstrap
+        Tengo experiencia y conocimiento en lenguajes como JavaScript, PHP, CSS,
+        HTML5, Python, Arduino y experiencia en frameworks como React, Vue,
+        Tailwind, Bootstrap
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service, i) => (
           <ServiceCard key={service.title} i={i} {...service} />
         ))}
@@ -56,4 +62,4 @@ const About = () => {
 };
 
 // export default SectionWrapper(About, "about")
-export default About
+export default About;
