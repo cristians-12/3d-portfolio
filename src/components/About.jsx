@@ -38,18 +38,18 @@ const ServiceCard = ({ i, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
+      <motion.div className="px-5" variants={textVariant()}>
+        <p className={styles.sectionSubText}>Introduccion</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary px-5 text-[17px] max-w-3xl leading-[30px]"
       >
-        Tengo experiencia y conocimiento en lenguajes como JavaScript, PHP, CSS,
-        HTML5, Python, Arduino y experiencia en frameworks como React, Vue,
-        Tailwind, Bootstrap
+        Tengo experiencia y conocimiento en lenguajes como JavaScript, Java, PHP, CSS,
+        HTML5 y Python. Experiencia en frameworks como React.js, Vue3, Tailwind,
+        Bootstrap y Laravel.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10 justify-center">
@@ -61,5 +61,5 @@ const About = () => {
   );
 };
 
-// export default SectionWrapper(About, "about")
-export default About;
+export default SectionWrapper(About, "about")
+
