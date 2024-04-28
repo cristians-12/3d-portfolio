@@ -23,6 +23,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    vue,
+    spotify
   } from "../assets";
   
   export const navLinks = [
@@ -65,6 +67,10 @@ import {
       icon: html,
     },
     {
+      name:"vue",
+      icon: vue
+    },
+    {
       name: "CSS 3",
       icon: css,
     },
@@ -80,10 +86,10 @@ import {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+    // {
+      // name: "Redux Toolkit",
+      // icon: redux,
+    // },
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -198,7 +204,7 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Clon de Spotify",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -215,8 +221,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: spotify,
+      source_code_link: "https://github.com/cristians-12/spotifyClone",
     },
     {
       name: "Job IT",
