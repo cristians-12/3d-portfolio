@@ -19,7 +19,7 @@ const Hero = () => {
               Hola, soy <span className="text-[#915eff]">Cristian</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              Desarrollo paginas web y servicios web.
+              Desarrollo paginas y servicios web, poseo conocimientos en el desarrollo movil y diferentes frameworks.
             </p>
           </div>
         </div>
